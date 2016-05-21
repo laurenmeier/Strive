@@ -16,7 +16,7 @@ import javax.jdo.annotations.PersistenceCapable;
 
 
 @PersistenceCapable
-@Accessible( Role.ALL )public class Booking extends JelloEntity {
+@Accessible( Role.OWNER )public class Booking extends JelloEntity {
 
 	private static final long serialVersionUID = -6803958537889807074L;
 
@@ -25,9 +25,10 @@ import javax.jdo.annotations.PersistenceCapable;
 	@ReadOnly
 	public Double cost;
 
+	//key is user email + product name
 	@Expose
 	@KeyElement
-	public String userId;
+	public String key;
 
 	@Reference(Product.class)
 	@Preview(element="name")
@@ -36,6 +37,7 @@ import javax.jdo.annotations.PersistenceCapable;
 	@ReadOnly
 	public Key product;
 
+	
 	@Override
 	protected JelloEntity beforeSave() throws IllegalRequestResource {
 		// TODO Auto-generated method stub

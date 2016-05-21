@@ -17,6 +17,8 @@ import jello.model.JelloModel;
 import jello.rest.IllegalRequestResource;
 import jello.security.Accessible;
 import jello.security.Role;
+import jello.ux.Control;
+import jello.ux.Preview;
 import jello.annotation.Attachment;
 
 
@@ -33,7 +35,7 @@ public class Product extends JelloEntity {
 	@Expose @Reference(Category.class)
 	public Key category;
 	
-	@Reference(User.class) @Expose @Required
+	@Reference(User.class) @Expose @Required @Preview(element = "name")
 	public Key user;
 
 	@Expose
@@ -52,9 +54,30 @@ public class Product extends JelloEntity {
 		b.product = this.getKey();
 		UserService userService = UserServiceFactory.getUserService();
 		if (userService.isUserLoggedIn()) {
-			b.userId = userService.getCurrentUser().getEmail();
+			b.key = userService.getCurrentUser().getEmail() + b.product.getName();
 		}
 		b.cost = this.cost;
 		b.create();
 	}
+	
+	@Expose @Control(src="/demo/custom/checkbox2")
+	public Boolean monday;
+
+	@Expose @Control(src="/demo/custom/checkbox2")
+	public Boolean tuesday;
+
+	@Expose @Control(src="/demo/custom/checkbox2")
+	public Boolean wednesday;
+
+	@Expose @Control(src="/demo/custom/checkbox2")
+	public Boolean thursday;
+
+	@Expose @Control(src="/demo/custom/checkbox2")
+	public Boolean friday;
+
+	@Expose @Control(src="/demo/custom/checkbox2")
+	public Boolean saturday;
+
+	@Expose @Control(src="/demo/custom/checkbox2")
+	public Boolean sunday;
 }

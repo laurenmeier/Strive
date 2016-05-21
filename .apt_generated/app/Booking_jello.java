@@ -21,7 +21,7 @@ json.append("			\"isPublic\" : true,");
 json.append("			\"isStatic\" : false");
 json.append("		},");
 json.append("		{");
-json.append("			\"name\" : \"userId\",");
+json.append("			\"name\" : \"key\",");
 json.append("			\"type\" : \"java.lang.String\",");
 json.append("			\"isPublic\" : true,");
 json.append("			\"isStatic\" : false");

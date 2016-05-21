@@ -36,6 +36,48 @@
 			"type" : "java.lang.String",
 			"isPublic" : true,
 			"isStatic" : false
+		},
+		{
+			"name" : "monday",
+			"type" : "java.lang.Boolean",
+			"isPublic" : true,
+			"isStatic" : false
+		},
+		{
+			"name" : "tuesday",
+			"type" : "java.lang.Boolean",
+			"isPublic" : true,
+			"isStatic" : false
+		},
+		{
+			"name" : "wednesday",
+			"type" : "java.lang.Boolean",
+			"isPublic" : true,
+			"isStatic" : false
+		},
+		{
+			"name" : "thursday",
+			"type" : "java.lang.Boolean",
+			"isPublic" : true,
+			"isStatic" : false
+		},
+		{
+			"name" : "friday",
+			"type" : "java.lang.Boolean",
+			"isPublic" : true,
+			"isStatic" : false
+		},
+		{
+			"name" : "saturday",
+			"type" : "java.lang.Boolean",
+			"isPublic" : true,
+			"isStatic" : false
+		},
+		{
+			"name" : "sunday",
+			"type" : "java.lang.Boolean",
+			"isPublic" : true,
+			"isStatic" : false
 		}
 	],
 	"actions" : [
