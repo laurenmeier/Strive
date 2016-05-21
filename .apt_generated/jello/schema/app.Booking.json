@@ -1,0 +1,25 @@
+{
+	"name" : "app.Booking",
+	"fields" : [
+		{
+			"name" : "cost",
+			"type" : "java.lang.Double",
+			"isPublic" : true,
+			"isStatic" : false
+		},
+		{
+			"name" : "userId",
+			"type" : "java.lang.String",
+			"isPublic" : true,
+			"isStatic" : false
+		},
+		{
+			"name" : "product",
+			"type" : "com.google.appengine.api.datastore.Key",
+			"isPublic" : true,
+			"isStatic" : false
+		}
+	],
+	"actions" : [
+	]
+}

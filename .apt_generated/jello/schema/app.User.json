@@ -1,0 +1,43 @@
+{
+	"name" : "app.User",
+	"fields" : [
+		{
+			"name" : "email",
+			"type" : "java.lang.String",
+			"isPublic" : true,
+			"isStatic" : false
+		},
+		{
+			"name" : "name",
+			"type" : "java.lang.String",
+			"isPublic" : true,
+			"isStatic" : false
+		},
+		{
+			"name" : "bio",
+			"type" : "java.lang.String",
+			"isPublic" : true,
+			"isStatic" : false
+		},
+		{
+			"name" : "age",
+			"type" : "java.lang.Integer",
+			"isPublic" : true,
+			"isStatic" : false
+		},
+		{
+			"name" : "services",
+			"type" : "java.util.List<app.Product>",
+			"isPublic" : true,
+			"isStatic" : false
+		},
+		{
+			"name" : "profilePic",
+			"type" : "java.lang.String",
+			"isPublic" : true,
+			"isStatic" : false
+		}
+	],
+	"actions" : [
+	]
+}
