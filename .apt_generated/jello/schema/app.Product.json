@@ -1,0 +1,41 @@
+{
+	"name" : "app.Product",
+	"fields" : [
+		{
+			"name" : "serialNumber",
+			"type" : "java.lang.String",
+			"isPublic" : true,
+			"isStatic" : false
+		},
+		{
+			"name" : "name",
+			"type" : "java.lang.String",
+			"isPublic" : true,
+			"isStatic" : false
+		},
+		{
+			"name" : "category",
+			"type" : "com.google.appengine.api.datastore.Key",
+			"isPublic" : true,
+			"isStatic" : false
+		},
+		{
+			"name" : "price",
+			"type" : "java.lang.Integer",
+			"isPublic" : true,
+			"isStatic" : false
+		}
+	],
+	"actions" : [
+		{
+			"name" : "createCatalog",
+			"isPublic" : true,
+			"isStatic" : true,
+			"isAsync" : null,
+			"accessible" : [],
+			"params" : [
+			],
+			"returnType" : "java.util.List<app.Product>"
+		}
+	]
+}

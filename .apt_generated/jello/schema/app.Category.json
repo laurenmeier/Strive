@@ -1,0 +1,19 @@
+{
+	"name" : "app.Category",
+	"fields" : [
+		{
+			"name" : "label",
+			"type" : "java.lang.String",
+			"isPublic" : true,
+			"isStatic" : false
+		},
+		{
+			"name" : "products",
+			"type" : "java.util.List<app.Product>",
+			"isPublic" : true,
+			"isStatic" : false
+		}
+	],
+	"actions" : [
+	]
+}
