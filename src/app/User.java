@@ -9,6 +9,7 @@ import jello.ux.Validation;
 import jello.annotation.Association;
 import jello.annotation.Attachment;
 import jello.annotation.Expose;
+import jello.annotation.Final;
 
 import java.util.List;
 
@@ -18,17 +19,14 @@ import javax.jdo.annotations.PersistenceCapable;
 import com.google.appengine.api.users.UserService;
 import com.google.appengine.api.users.UserServiceFactory;
 
-import jello.annotation.KeyElement;
-import jello.annotation.ReadOnly;
-
-import com.google.appengine.api.datastore.Key;
-import jello.annotation.Reference;
-import jello.ux.Preview;
-
-
-
 @PersistenceCapable
-@Accessible(Role.USER)
+@Accessible(
+		   retrieve = Role.USER,
+		   create =   Role.USER,
+		   update =   Role.OWNER,
+		   query =    Role.USER,
+		   delete =   Role.OWNER
+		)
 public class User extends JelloEntity {
 
 	private static final long serialVersionUID = -8622619703852330513L;
@@ -42,7 +40,7 @@ public class User extends JelloEntity {
 	@Expose
 	public String bio;
 
-	@Expose @Required
+	@Expose @Required @Final
 	public Integer age;
 	
 	@Expose @NotPersistent @Association(mappedBy = "User")
@@ -59,7 +57,6 @@ public class User extends JelloEntity {
 			if(email == null)
 				email = userService.getCurrentUser().getEmail();
 		}
-		//TODO: if email is already linked to a user, do not create new user
 		return this;
 	}
 }

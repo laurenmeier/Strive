@@ -11,8 +11,6 @@ import jello.annotation.KeyElement;
 import jello.model.JelloEntity;
 import jello.security.Accessible;
 
-
-
 @Accessible @PersistenceCapable
 public class Category extends JelloEntity {
 	private static final long serialVersionUID = -374009095641063548L;
@@ -21,9 +19,5 @@ public class Category extends JelloEntity {
 	public String label;
 	
 	@Expose @NotPersistent @Association(mappedBy="category") 
-	public List<Product> products;
-
-
-
-	
+	public List<Product> products;	
 }
