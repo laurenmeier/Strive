@@ -1,0 +1,103 @@
+*Post-Hackathon* Development Log
+
+Code here: https://github.com/laurenmeier/Strive
+
+Project here: silicon-strive.appspot.com
+
+Day 1: 5/20/16
+	- Learn about web technologies
+	- Create first project with google app engine
+	- explore jello framework
+	- Brainstorm project ideas
+	- Decide on project idea: Community Teen Services Networking Application
+	- Create project and upload to github!
+	
+	To-Do:
+	- Create a working version of this app by the end of the hackathon by:
+		- Create entities
+		- Make appropriate fields
+		- Decide on keys used for different entities
+	- Make Hackathon Presentation!
+	
+Day 2: 5/21/16
+	- Finish project submission
+	- Add front end using template and smartshop js
+	- Test extensively
+	- Plan presentation
+	- Deploy project to google app engine @ silicon-strive.appspot.com
+	
+	To-Do:
+	- Change accessibility controls so only owners can change their entity's fields
+	- Fix keys issue
+	- Learn more about debugging with chrome developer tools
+
+Day 3: 5/23/16
+	- Read over accessibility annotations on jello webpage
+	- Found bug with product entities
+	- Talk to Tamuz and fix product bug
+	
+	To-Do:
+	- Implement accessible annotations to entities
+	- Write project overview/tutorial
+	
+Day 4: 5/24/16
+	- Add accessibility controls to entities
+	- Test accessibility
+	- Clean-Up/finalize code
+	- Fix log in issue
+	
+	To-Do
+	- Finish final submission and documents!
+
+*Pre-Hackathon* Development Log
+
+Code here: https://github.com/laurenmeier/RawatMeierFinal 
+
+Day 1: 5/11/16
+	- Created git repository and eclipse project
+	- Linked the repository to a remote GitHub repository
+	- Researched how JSON works and how simple examples work in JAVA
+	- found sources of public data available online
+	
+	To-Do: 
+	- Get a working copy of code to read in a JSON file from a url 
+
+Day 2: 5/12/16
+	- Created a dev log!
+	- Researched different ways to create JSON objects in java
+	- Completed working code to read JSON file from url by replacing jar file
+	
+	Resources:
+	- New JSON API: https://github.com/stleary/JSON-java
+	- Info on reading a JSON file from url in java: http://stackoverflow.com/questions/4308554/simplest-way-to-read-json-from-a-url-in-java
+	
+	To-Do:
+	- Look into: http://www.oracle.com/technetwork/articles/java/json-1973242.html for built-in java solution
+	- parse JSON object into correct format and into JSON Array objects
+	- Use parsed JSON data for a purpose in code/ test its functionality
+	
+Day 3: 5/17/16
+	- Explored the hierarchy of JSON data taken from the Internet
+	- used exploration techniques to differentiate each level of data between an object and an array
+	- Researched to understand how JSON data is structured
+	
+	Resources:
+	- JSON simple info: https://code.google.com/archive/p/json-simple/
+	- Project to compare to: https://github.com/maticlikar/LikarSandovalFinal/blob/master/src/Main.java
+	
+	To-Do:
+	- Print all data with correct structure and order
+	- Understand classmate's project and how it works
+	- Find difference between JSONObject and JSONArray
+	
+Day 4: 5/19/16
+	- Used structure of data to extract individual elements of the data
+	- Change json extraction program to print out all elements of data in a list
+	- Start tutorial for html and css
+	- Build a simple website
+	
+	To-Do:
+	- Start actual Hackathon project on Friday!
+	- research public data and brainstorm uses for this data
+	- Find other sources of public data than sf OpenData
+	- Learn more about website skills
